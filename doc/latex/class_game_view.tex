@@ -1,0 +1,165 @@
+\hypertarget{class_game_view}{}\section{Game\+View Class Reference}
+\label{class_game_view}\index{Game\+View@{Game\+View}}
+
+
+Represents the view of the game.  
+
+
+
+
+{\ttfamily \#include $<$Gameview.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+View\+:
+% FIG 0
+
+
+Collaboration diagram for Game\+View\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_view_ac7be63c879c9067ebad04fbccea92ecb}{Game\+View} (\hyperlink{class_game}{Game} \&a\+Game)
+\begin{DoxyCompactList}\small\item\em Constructs the gameview. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_game_view_a40206044e0f9c6b5a8f679400666436a}{print\+Case} (\hyperlink{class_case}{Case} \&my\+Case)
+\begin{DoxyCompactList}\small\item\em Prints a case of the board correctly. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_view_a075aedb2174abafec7b6789906fcb277}{print\+Ligne} (const unsigned \&height)
+\begin{DoxyCompactList}\small\item\em Prints a border for each case. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_view_a6e01d1ee4e79453ef7dad726e883af7a}{print\+Board} (\hyperlink{class_board}{Board} \&my\+Board)
+\begin{DoxyCompactList}\small\item\em Prints the board of the game. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_view_a49a3340e0710fdaa7ae7a24711639427}{print\+Board\+With\+Bombs} (\hyperlink{class_board}{Board} \&my\+Board)
+\begin{DoxyCompactList}\small\item\em Prints the board with bombs. Used in the end of the game. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_view_adf8a4163d1c1d57b320d8581d4065d13}{print\+Player} (\hyperlink{class_player}{Player} \&player)
+\begin{DoxyCompactList}\small\item\em Prints a player. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_game_view_ab66a806d28193eacb94ac3aee388c8dd}{print\+Time\+H\+MS} (unsigned seconds)
+\begin{DoxyCompactList}\small\item\em Converts an amount of seconds to H\+MS format and prints it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_view_ac695e103d61d4411b2be9d7d31a8721d}\label{class_game_view_ac695e103d61d4411b2be9d7d31a8721d}} 
+void \hyperlink{class_game_view_ac695e103d61d4411b2be9d7d31a8721d}{a\+Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the view (\hyperlink{class_observer}{Observer} Pattern)x. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the view of the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_view_ac7be63c879c9067ebad04fbccea92ecb}\label{class_game_view_ac7be63c879c9067ebad04fbccea92ecb}} 
+\index{Game\+View@{Game\+View}!Game\+View@{Game\+View}}
+\index{Game\+View@{Game\+View}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{Game\+View()}{GameView()}}
+{\footnotesize\ttfamily Game\+View\+::\+Game\+View (\begin{DoxyParamCaption}\item[{\hyperlink{class_game}{Game} \&}]{a\+Game }\end{DoxyParamCaption})}
+
+
+
+Constructs the gameview. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Game} & The model of the game \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_view_a6e01d1ee4e79453ef7dad726e883af7a}\label{class_game_view_a6e01d1ee4e79453ef7dad726e883af7a}} 
+\index{Game\+View@{Game\+View}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Board()}{printBoard()}}
+{\footnotesize\ttfamily void Game\+View\+::print\+Board (\begin{DoxyParamCaption}\item[{\hyperlink{class_board}{Board} \&}]{my\+Board }\end{DoxyParamCaption})}
+
+
+
+Prints the board of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Board} & The board of the game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_view_a49a3340e0710fdaa7ae7a24711639427}\label{class_game_view_a49a3340e0710fdaa7ae7a24711639427}} 
+\index{Game\+View@{Game\+View}!print\+Board\+With\+Bombs@{print\+Board\+With\+Bombs}}
+\index{print\+Board\+With\+Bombs@{print\+Board\+With\+Bombs}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Board\+With\+Bombs()}{printBoardWithBombs()}}
+{\footnotesize\ttfamily void Game\+View\+::print\+Board\+With\+Bombs (\begin{DoxyParamCaption}\item[{\hyperlink{class_board}{Board} \&}]{my\+Board }\end{DoxyParamCaption})}
+
+
+
+Prints the board with bombs. Used in the end of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Board} & A board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_view_a40206044e0f9c6b5a8f679400666436a}\label{class_game_view_a40206044e0f9c6b5a8f679400666436a}} 
+\index{Game\+View@{Game\+View}!print\+Case@{print\+Case}}
+\index{print\+Case@{print\+Case}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Case()}{printCase()}}
+{\footnotesize\ttfamily std\+::string Game\+View\+::print\+Case (\begin{DoxyParamCaption}\item[{\hyperlink{class_case}{Case} \&}]{my\+Case }\end{DoxyParamCaption})}
+
+
+
+Prints a case of the board correctly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Case} & A case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that contaits the correct format of a case to print. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_view_a075aedb2174abafec7b6789906fcb277}\label{class_game_view_a075aedb2174abafec7b6789906fcb277}} 
+\index{Game\+View@{Game\+View}!print\+Ligne@{print\+Ligne}}
+\index{print\+Ligne@{print\+Ligne}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Ligne()}{printLigne()}}
+{\footnotesize\ttfamily void Game\+View\+::print\+Ligne (\begin{DoxyParamCaption}\item[{const unsigned \&}]{height }\end{DoxyParamCaption})}
+
+
+
+Prints a border for each case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & A height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_view_adf8a4163d1c1d57b320d8581d4065d13}\label{class_game_view_adf8a4163d1c1d57b320d8581d4065d13}} 
+\index{Game\+View@{Game\+View}!print\+Player@{print\+Player}}
+\index{print\+Player@{print\+Player}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Player()}{printPlayer()}}
+{\footnotesize\ttfamily void Game\+View\+::print\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} \&}]{player }\end{DoxyParamCaption})}
+
+
+
+Prints a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & A player. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_view_ab66a806d28193eacb94ac3aee388c8dd}\label{class_game_view_ab66a806d28193eacb94ac3aee388c8dd}} 
+\index{Game\+View@{Game\+View}!print\+Time\+H\+MS@{print\+Time\+H\+MS}}
+\index{print\+Time\+H\+MS@{print\+Time\+H\+MS}!Game\+View@{Game\+View}}
+\subsubsection{\texorpdfstring{print\+Time\+H\+M\+S()}{printTimeHMS()}}
+{\footnotesize\ttfamily std\+::string Game\+View\+::print\+Time\+H\+MS (\begin{DoxyParamCaption}\item[{unsigned}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Converts an amount of seconds to H\+MS format and prints it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & An amount of seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String that represents the H\+MS format for an amount of seconds. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+console/Gameview.\+hpp\item 
+console/Gameview.\+cpp\end{DoxyCompactItemize}

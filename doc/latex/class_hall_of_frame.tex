@@ -1,0 +1,69 @@
+\hypertarget{class_hall_of_frame}{}\section{Hall\+Of\+Frame Class Reference}
+\label{class_hall_of_frame}\index{Hall\+Of\+Frame@{Hall\+Of\+Frame}}
+
+
+The Hall Of Fame class.  
+
+
+
+
+{\ttfamily \#include $<$halloffame.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_score}{Score} $>$ \hyperlink{class_hall_of_frame_ae0333d504f861748f16bfd92ec26b7fa}{read} (unsigned rows, unsigned columns, unsigned nb\+Bombs, unsigned top=5)
+\begin{DoxyCompactList}\small\item\em Allows to read in the file the score that corresponds to a certain game configuration (. \end{DoxyCompactList}\item 
+void \hyperlink{class_hall_of_frame_a78397ce0da28ce790882bb407c8b3915}{write} (const \hyperlink{class_score}{Score} \&score)
+\begin{DoxyCompactList}\small\item\em write the score in the file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Hall Of Fame class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hall_of_frame_ae0333d504f861748f16bfd92ec26b7fa}\label{class_hall_of_frame_ae0333d504f861748f16bfd92ec26b7fa}} 
+\index{Hall\+Of\+Frame@{Hall\+Of\+Frame}!read@{read}}
+\index{read@{read}!Hall\+Of\+Frame@{Hall\+Of\+Frame}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_score}{Score} $>$ Hall\+Of\+Frame\+::read (\begin{DoxyParamCaption}\item[{unsigned}]{rows,  }\item[{unsigned}]{columns,  }\item[{unsigned}]{nb\+Bombs,  }\item[{unsigned}]{top = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Allows to read in the file the score that corresponds to a certain game configuration (. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & the rows of the game configuration \\
+\hline
+{\em columns} & the columns of the game configuration \\
+\hline
+{\em nb\+Bombs} & the number of bombs of the game configuration \\
+\hline
+{\em top} & the top 5 ranking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sorted score of the configuration (sort by time ascending) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hall_of_frame_a78397ce0da28ce790882bb407c8b3915}\label{class_hall_of_frame_a78397ce0da28ce790882bb407c8b3915}} 
+\index{Hall\+Of\+Frame@{Hall\+Of\+Frame}!write@{write}}
+\index{write@{write}!Hall\+Of\+Frame@{Hall\+Of\+Frame}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Hall\+Of\+Frame\+::write (\begin{DoxyParamCaption}\item[{const \hyperlink{class_score}{Score} \&}]{score }\end{DoxyParamCaption})}
+
+
+
+write the score in the file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & the score to write in the file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/halloffame.\+hpp\item 
+core/halloffame.\+cpp\end{DoxyCompactItemize}

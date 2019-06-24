@@ -1,0 +1,239 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+Represents the minesweeper board.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_a54307d1cc6a6ae03b097dc20040bbf4e}{Board} (unsigned a\+Width, unsigned a\+Height, double a\+Nbr\+Bomb)
+\begin{DoxyCompactList}\small\item\em Constructs a board. \end{DoxyCompactList}\item 
+\hyperlink{class_board_ae00af37de30a6432381047fbd368b078}{Board} (unsigned a\+Width=9, unsigned a\+Height=9)
+\begin{DoxyCompactList}\small\item\em Constructs a board with defaults parameters (9x9 with 5 bombs), unless we overload parameters. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a68355307ecb32bbdc13073e029280e32}{canmake\+Board} ()
+\begin{DoxyCompactList}\small\item\em Checks if the bombs are not greather than the size of the board. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_board_aaee53d499b43971e1ef5b6fa0d65aca3}{get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Getter for the width. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_board_abbc7d5be210011b7c37315512a8a2cdb}{get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Getter for the height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_a71e5a8193ee2be9de3b369d47efb1d5e}\label{class_board_a71e5a8193ee2be9de3b369d47efb1d5e}} 
+unsigned \hyperlink{class_board_a71e5a8193ee2be9de3b369d47efb1d5e}{get\+Nbr\+Bomb} () const
+\begin{DoxyCompactList}\small\item\em Getter for the number of bombs in the board. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{class_case}{Case} $>$ $>$ \& \hyperlink{class_board_a15ae2a1e56e7a0c97a239a5311a1eb53}{get\+Grid} ()
+\begin{DoxyCompactList}\small\item\em Getter for the grid. \end{DoxyCompactList}\item 
+\hyperlink{class_case}{Case} \hyperlink{class_board_a24b99110a6a311dd122cabeeb63e81d8}{get\+Case\+At} (const unsigned \&row, const unsigned \&column) const
+\begin{DoxyCompactList}\small\item\em Finds the case corresponding to a position. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a4b0f58dcf0a552e80a9ca012e763d856}{reveal} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Reveals a case. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_ac800c9dafe0e7002caeb67d042360ec0}\label{class_board_ac800c9dafe0e7002caeb67d042360ec0}} 
+void \hyperlink{class_board_ac800c9dafe0e7002caeb67d042360ec0}{init\+Bomb} ()
+\begin{DoxyCompactList}\small\item\em Initializes the bombs on the board. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a4e4962f91b8258edc7be50714a3c5668}{init\+Bomb\+Manual} (const unsigned \&row, const unsigned \&column)
+\begin{DoxyCompactList}\small\item\em Initializes the bombs in specific positions. Useful for unit tests. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_board_a607be54a79b42d895fe89e62b4f88577}{check\+Neighbours} (int \&row, int \&column)
+\begin{DoxyCompactList}\small\item\em Counts the number of neighbours that a case has. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_acfe30fe7eede25b2fec132e7f89cb270}{is\+Inside\+Grid} (const int \&row, const int \&column)
+\begin{DoxyCompactList}\small\item\em Checks if a position is inside of the grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_ada5eae4dbed658da0db0663dc62277aa}\label{class_board_ada5eae4dbed658da0db0663dc62277aa}} 
+unsigned \hyperlink{class_board_ada5eae4dbed658da0db0663dc62277aa}{count\+Bombs} ()
+\begin{DoxyCompactList}\small\item\em Counts the number of bombs in the board (looping). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the minesweeper board. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_a54307d1cc6a6ae03b097dc20040bbf4e}\label{class_board_a54307d1cc6a6ae03b097dc20040bbf4e}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{unsigned}]{a\+Width,  }\item[{unsigned}]{a\+Height,  }\item[{double}]{a\+Nbr\+Bomb }\end{DoxyParamCaption})}
+
+
+
+Constructs a board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A width \\
+\hline
+{\em height} & A height \\
+\hline
+{\em number} & of Bomb \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_ae00af37de30a6432381047fbd368b078}\label{class_board_ae00af37de30a6432381047fbd368b078}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{unsigned}]{a\+Width = {\ttfamily 9},  }\item[{unsigned}]{a\+Height = {\ttfamily 9} }\end{DoxyParamCaption})}
+
+
+
+Constructs a board with defaults parameters (9x9 with 5 bombs), unless we overload parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & A width \\
+\hline
+{\em height} & A height \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a68355307ecb32bbdc13073e029280e32}\label{class_board_a68355307ecb32bbdc13073e029280e32}} 
+\index{Board@{Board}!canmake\+Board@{canmake\+Board}}
+\index{canmake\+Board@{canmake\+Board}!Board@{Board}}
+\subsubsection{\texorpdfstring{canmake\+Board()}{canmakeBoard()}}
+{\footnotesize\ttfamily bool Board\+::canmake\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the bombs are not greather than the size of the board. 
+
+\begin{DoxyReturn}{Returns}
+true if the bombs are not greather than the size of the board, false if its the opposite. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a607be54a79b42d895fe89e62b4f88577}\label{class_board_a607be54a79b42d895fe89e62b4f88577}} 
+\index{Board@{Board}!check\+Neighbours@{check\+Neighbours}}
+\index{check\+Neighbours@{check\+Neighbours}!Board@{Board}}
+\subsubsection{\texorpdfstring{check\+Neighbours()}{checkNeighbours()}}
+{\footnotesize\ttfamily unsigned Board\+::check\+Neighbours (\begin{DoxyParamCaption}\item[{int \&}]{row,  }\item[{int \&}]{column }\end{DoxyParamCaption})}
+
+
+
+Counts the number of neighbours that a case has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row of a case\textquotesingle{}s position \\
+\hline
+{\em column} & The column of a case\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_a24b99110a6a311dd122cabeeb63e81d8}\label{class_board_a24b99110a6a311dd122cabeeb63e81d8}} 
+\index{Board@{Board}!get\+Case\+At@{get\+Case\+At}}
+\index{get\+Case\+At@{get\+Case\+At}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Case\+At()}{getCaseAt()}}
+{\footnotesize\ttfamily \hyperlink{class_case}{Case} Board\+::get\+Case\+At (\begin{DoxyParamCaption}\item[{const unsigned \&}]{row,  }\item[{const unsigned \&}]{column }\end{DoxyParamCaption}) const}
+
+
+
+Finds the case corresponding to a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & A row \\
+\hline
+{\em column} & A column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a15ae2a1e56e7a0c97a239a5311a1eb53}\label{class_board_a15ae2a1e56e7a0c97a239a5311a1eb53}} 
+\index{Board@{Board}!get\+Grid@{get\+Grid}}
+\index{get\+Grid@{get\+Grid}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Grid()}{getGrid()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$\hyperlink{class_case}{Case}$>$ $>$\& Board\+::get\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the grid. 
+
+\begin{DoxyReturn}{Returns}
+The grid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_abbc7d5be210011b7c37315512a8a2cdb}\label{class_board_abbc7d5be210011b7c37315512a8a2cdb}} 
+\index{Board@{Board}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily unsigned Board\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the height. 
+
+\begin{DoxyReturn}{Returns}
+The height. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_aaee53d499b43971e1ef5b6fa0d65aca3}\label{class_board_aaee53d499b43971e1ef5b6fa0d65aca3}} 
+\index{Board@{Board}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Board@{Board}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily unsigned Board\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the width. 
+
+\begin{DoxyReturn}{Returns}
+The width. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a4e4962f91b8258edc7be50714a3c5668}\label{class_board_a4e4962f91b8258edc7be50714a3c5668}} 
+\index{Board@{Board}!init\+Bomb\+Manual@{init\+Bomb\+Manual}}
+\index{init\+Bomb\+Manual@{init\+Bomb\+Manual}!Board@{Board}}
+\subsubsection{\texorpdfstring{init\+Bomb\+Manual()}{initBombManual()}}
+{\footnotesize\ttfamily void Board\+::init\+Bomb\+Manual (\begin{DoxyParamCaption}\item[{const unsigned \&}]{row,  }\item[{const unsigned \&}]{column }\end{DoxyParamCaption})}
+
+
+
+Initializes the bombs in specific positions. Useful for unit tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Tha row in the board \\
+\hline
+{\em column} & The column in the board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_acfe30fe7eede25b2fec132e7f89cb270}\label{class_board_acfe30fe7eede25b2fec132e7f89cb270}} 
+\index{Board@{Board}!is\+Inside\+Grid@{is\+Inside\+Grid}}
+\index{is\+Inside\+Grid@{is\+Inside\+Grid}!Board@{Board}}
+\subsubsection{\texorpdfstring{is\+Inside\+Grid()}{isInsideGrid()}}
+{\footnotesize\ttfamily bool Board\+::is\+Inside\+Grid (\begin{DoxyParamCaption}\item[{const int \&}]{row,  }\item[{const int \&}]{column }\end{DoxyParamCaption})}
+
+
+
+Checks if a position is inside of the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & A row \\
+\hline
+{\em column} & A column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the position is in the grid, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a4b0f58dcf0a552e80a9ca012e763d856}\label{class_board_a4b0f58dcf0a552e80a9ca012e763d856}} 
+\index{Board@{Board}!reveal@{reveal}}
+\index{reveal@{reveal}!Board@{Board}}
+\subsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void Board\+::reveal (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Reveals a case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The case\textquotesingle{}s row \\
+\hline
+{\em column} & The case\textquotesingle{}s column \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/\hyperlink{_board_8hpp}{Board.\+hpp}\item 
+core/Board.\+cpp\end{DoxyCompactItemize}

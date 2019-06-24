@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node40 [label="QDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node40 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="ConfiGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_confi_game.html",tooltip="The ConfiGame class. "];
+  Node40 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="HallOfFrameGui",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hall_of_frame_gui.html"];
+}

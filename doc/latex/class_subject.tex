@@ -1,0 +1,72 @@
+\hypertarget{class_subject}{}\section{Subject Class Reference}
+\label{class_subject}\index{Subject@{Subject}}
+
+
+The \hyperlink{class_subject}{Subject} class.  
+
+
+
+
+{\ttfamily \#include $<$Subject.\+hpp$>$}
+
+
+
+Inheritance diagram for Subject\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_subject_ac276c84c5d4fd6df3fb9025c131fa10d}{attach} (\hyperlink{class_observer}{Observer} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Attaches an observer to the list of observers. \end{DoxyCompactList}\item 
+void \hyperlink{class_subject_ad4959e3d82f295326fb003df4a38c522}{dettach} (\hyperlink{class_observer}{Observer} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Dettaches an observer from the list of observers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_subject_af104c2baf37c7aa63b2ef6d32c2b3a9c}\label{class_subject_af104c2baf37c7aa63b2ef6d32c2b3a9c}} 
+void \hyperlink{class_subject_af104c2baf37c7aa63b2ef6d32c2b3a9c}{notify} ()
+\begin{DoxyCompactList}\small\item\em Notifies all observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_subject_ac55e8afa4f70788ead15a2eae70b5696}\label{class_subject_ac55e8afa4f70788ead15a2eae70b5696}} 
+std\+::vector$<$ \hyperlink{class_observer}{Observer} $\ast$ $>$ \hyperlink{class_subject_ac55e8afa4f70788ead15a2eae70b5696}{observers}
+\begin{DoxyCompactList}\small\item\em A list of observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_subject}{Subject} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_subject_ac276c84c5d4fd6df3fb9025c131fa10d}\label{class_subject_ac276c84c5d4fd6df3fb9025c131fa10d}} 
+\index{Subject@{Subject}!attach@{attach}}
+\index{attach@{attach}!Subject@{Subject}}
+\subsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Subject\+::attach (\begin{DoxyParamCaption}\item[{\hyperlink{class_observer}{Observer} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attaches an observer to the list of observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & A pointer that represents an observer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_subject_ad4959e3d82f295326fb003df4a38c522}\label{class_subject_ad4959e3d82f295326fb003df4a38c522}} 
+\index{Subject@{Subject}!dettach@{dettach}}
+\index{dettach@{dettach}!Subject@{Subject}}
+\subsubsection{\texorpdfstring{dettach()}{dettach()}}
+{\footnotesize\ttfamily void Subject\+::dettach (\begin{DoxyParamCaption}\item[{\hyperlink{class_observer}{Observer} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dettaches an observer from the list of observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & A pointer that represents an observer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+controllers/Subject.\+hpp\end{DoxyCompactItemize}

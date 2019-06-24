@@ -1,0 +1,100 @@
+\hypertarget{class_case}{}\section{Case Class Reference}
+\label{class_case}\index{Case@{Case}}
+
+
+Represents a case in a board.  
+
+
+
+
+{\ttfamily \#include $<$Case.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_case_a14237e17aab1829965adab76b747db6c}\label{class_case_a14237e17aab1829965adab76b747db6c}} 
+\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{class_case}{Case}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_case_a477a2982a26cb382de7f154828a1c15a}\label{class_case_a477a2982a26cb382de7f154828a1c15a}} 
+void \hyperlink{class_case_a477a2982a26cb382de7f154828a1c15a}{set\+Contains\+Bomb} ()
+\begin{DoxyCompactList}\small\item\em Adds a bomb in a case. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_case_ab907871025ce08f4a873e3bf2536b659}\label{class_case_ab907871025ce08f4a873e3bf2536b659}} 
+void \hyperlink{class_case_ab907871025ce08f4a873e3bf2536b659}{remove\+Contains\+Bomb} ()
+\begin{DoxyCompactList}\small\item\em Removes a bomb of a case. \end{DoxyCompactList}\item 
+State \& \hyperlink{class_case_a2b5ed0f60c9827735d9b782f50fe7d04}{get\+State} ()
+\begin{DoxyCompactList}\small\item\em Getter for the state. \end{DoxyCompactList}\item 
+bool \hyperlink{class_case_ab776d3e52ca8b9183e20cc301cfa062f}{get\+Contains\+Bomb} () const
+\begin{DoxyCompactList}\small\item\em Getter for contains\+Bomb. \end{DoxyCompactList}\item 
+void \hyperlink{class_case_a4c6f440f1cf6c24cc33be445cc5aad45}{set\+State} (State state)
+\begin{DoxyCompactList}\small\item\em Changes the state of a case. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_case_ae6f3c6f3b725214d0c7db8661f7a7816}{get\+Nb\+Bomb\+Neighbours} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of neighbours bombs (adjacent cases). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_case_a1a99948b78ed3c5589d821ca3221f034}\label{class_case_a1a99948b78ed3c5589d821ca3221f034}} 
+void \hyperlink{class_case_a1a99948b78ed3c5589d821ca3221f034}{set\+Nb\+Bomb\+Neighbours} (unsigned nb\+Bombs)
+\begin{DoxyCompactList}\small\item\em Sets the number of neighbours bombs (adjacent cases). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a case in a board. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_case_ab776d3e52ca8b9183e20cc301cfa062f}\label{class_case_ab776d3e52ca8b9183e20cc301cfa062f}} 
+\index{Case@{Case}!get\+Contains\+Bomb@{get\+Contains\+Bomb}}
+\index{get\+Contains\+Bomb@{get\+Contains\+Bomb}!Case@{Case}}
+\subsubsection{\texorpdfstring{get\+Contains\+Bomb()}{getContainsBomb()}}
+{\footnotesize\ttfamily bool Case\+::get\+Contains\+Bomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for contains\+Bomb. 
+
+\begin{DoxyReturn}{Returns}
+True if the case contains a bomb, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_case_ae6f3c6f3b725214d0c7db8661f7a7816}\label{class_case_ae6f3c6f3b725214d0c7db8661f7a7816}} 
+\index{Case@{Case}!get\+Nb\+Bomb\+Neighbours@{get\+Nb\+Bomb\+Neighbours}}
+\index{get\+Nb\+Bomb\+Neighbours@{get\+Nb\+Bomb\+Neighbours}!Case@{Case}}
+\subsubsection{\texorpdfstring{get\+Nb\+Bomb\+Neighbours()}{getNbBombNeighbours()}}
+{\footnotesize\ttfamily unsigned Case\+::get\+Nb\+Bomb\+Neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of neighbours bombs (adjacent cases). 
+
+\begin{DoxyReturn}{Returns}
+The number neighbours bombs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_case_a2b5ed0f60c9827735d9b782f50fe7d04}\label{class_case_a2b5ed0f60c9827735d9b782f50fe7d04}} 
+\index{Case@{Case}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Case@{Case}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily State\& Case\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the state. 
+
+\begin{DoxyReturn}{Returns}
+The state of a case (Hidden, discovered or mined) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_case_a4c6f440f1cf6c24cc33be445cc5aad45}\label{class_case_a4c6f440f1cf6c24cc33be445cc5aad45}} 
+\index{Case@{Case}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!Case@{Case}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void Case\+::set\+State (\begin{DoxyParamCaption}\item[{State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the state of a case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A state \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/Case.\+hpp\item 
+core/Case.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,195 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+The \hyperlink{class_game}{Game} class.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+:
+% FIG 0
+
+
+Collaboration diagram for Game\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a925373fdd71dbf023343bd1ad96cf2c2}\label{class_game_a925373fdd71dbf023343bd1ad96cf2c2}} 
+\hyperlink{class_game_a925373fdd71dbf023343bd1ad96cf2c2}{Game} (std\+::string name\+Player)
+\begin{DoxyCompactList}\small\item\em Constructs the game with default parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_game_ac393a8a23dcb6357c45885f42940458e}{Game} (std\+::string name\+Player, unsigned width, unsigned height, double nbr\+Bomb)
+\begin{DoxyCompactList}\small\item\em Constructs the game with custom parameters. \end{DoxyCompactList}\item 
+\hyperlink{class_game_a7326de784e68fe0ef3bd6004bc0c6f8c}{Game} (std\+::string name\+Player, unsigned width, unsigned height)
+\begin{DoxyCompactList}\small\item\em Constructs the game with custom parameters. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_a55e7cb0517ed8bc8f0cbe6d3b2be6994}{reveal\+Case} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Reveals a case. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_ab83061fabcbe5b952235162cc5f55df0}{mark\+Case} (const unsigned \&row, const unsigned \&column)
+\begin{DoxyCompactList}\small\item\em Marks a case with a flag (bomb suspect) \end{DoxyCompactList}\item 
+void \hyperlink{class_game_adccaa192130e7d6f5c5973b136c0e1c7}{remove\+Mark\+Case} (const unsigned \&row, const unsigned \&column)
+\begin{DoxyCompactList}\small\item\em Removes the flag from a case. \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_a82206afb0164fe775b2738236098caa6}{end\+Game} ()
+\item 
+\mbox{\Hypertarget{class_game_a2472a36f44bd9c7a3e2650227d02c586}\label{class_game_a2472a36f44bd9c7a3e2650227d02c586}} 
+unsigned \hyperlink{class_game_a2472a36f44bd9c7a3e2650227d02c586}{get\+Elapsed\+Seconds} () const
+\begin{DoxyCompactList}\small\item\em Gets the amount of elapsed seconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a8020f7bad85e31c3b4f4931db32093f7}\label{class_game_a8020f7bad85e31c3b4f4931db32093f7}} 
+\hyperlink{class_board}{Board} \& \hyperlink{class_game_a8020f7bad85e31c3b4f4931db32093f7}{get\+Board} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \hyperlink{class_board}{Board}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a618cd24f8a672720ed085f41cf90af6f}\label{class_game_a618cd24f8a672720ed085f41cf90af6f}} 
+\hyperlink{class_player}{Player} \& \hyperlink{class_game_a618cd24f8a672720ed085f41cf90af6f}{get\+Player} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \hyperlink{class_player}{Player}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_game_aa57c57fa12655c4a877e06a291d215fc}{get\+Is\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Getter fot the attribute \textquotesingle{}is\+Game\+Over\textquotesingle{}. The game is over when the player has revealed all hidden cases without reveal a bomb. If the user chooses to reveal a case that contains a bomb, the game ends instantanely and user looses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a890d9351fa8947f2b70e5d0c20dc8c6c}\label{class_game_a890d9351fa8947f2b70e5d0c20dc8c6c}} 
+void \hyperlink{class_game_a890d9351fa8947f2b70e5d0c20dc8c6c}{set\+Is\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Sets game over. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_adcbcc007e6a362957ed347373285206b}{bomb\+First\+Reveal} (const unsigned \&row, const unsigned \&column)
+\begin{DoxyCompactList}\small\item\em The first case that the user reveals must not be a bomb, this method do this work. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_game}{Game} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ac393a8a23dcb6357c45885f42940458e}\label{class_game_ac393a8a23dcb6357c45885f42940458e}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Player,  }\item[{unsigned}]{width,  }\item[{unsigned}]{height,  }\item[{double}]{nbr\+Bomb }\end{DoxyParamCaption})}
+
+
+
+Constructs the game with custom parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the board. \\
+\hline
+{\em height} & The height of the board. \\
+\hline
+{\em nbr\+Bomb} & The number of the bombs that the board will have. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a7326de784e68fe0ef3bd6004bc0c6f8c}\label{class_game_a7326de784e68fe0ef3bd6004bc0c6f8c}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+Player,  }\item[{unsigned}]{width,  }\item[{unsigned}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructs the game with custom parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the board. \\
+\hline
+{\em height} & The height of the board. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_adcbcc007e6a362957ed347373285206b}\label{class_game_adcbcc007e6a362957ed347373285206b}} 
+\index{Game@{Game}!bomb\+First\+Reveal@{bomb\+First\+Reveal}}
+\index{bomb\+First\+Reveal@{bomb\+First\+Reveal}!Game@{Game}}
+\subsubsection{\texorpdfstring{bomb\+First\+Reveal()}{bombFirstReveal()}}
+{\footnotesize\ttfamily void Game\+::bomb\+First\+Reveal (\begin{DoxyParamCaption}\item[{const unsigned \&}]{row,  }\item[{const unsigned \&}]{column }\end{DoxyParamCaption})}
+
+
+
+The first case that the user reveals must not be a bomb, this method do this work. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & A row \\
+\hline
+{\em column} & A column \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a82206afb0164fe775b2738236098caa6}\label{class_game_a82206afb0164fe775b2738236098caa6}} 
+\index{Game@{Game}!end\+Game@{end\+Game}}
+\index{end\+Game@{end\+Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{end\+Game()}{endGame()}}
+{\footnotesize\ttfamily bool Game\+::end\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_aa57c57fa12655c4a877e06a291d215fc}\label{class_game_aa57c57fa12655c4a877e06a291d215fc}} 
+\index{Game@{Game}!get\+Is\+Game\+Over@{get\+Is\+Game\+Over}}
+\index{get\+Is\+Game\+Over@{get\+Is\+Game\+Over}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+Is\+Game\+Over()}{getIsGameOver()}}
+{\footnotesize\ttfamily bool Game\+::get\+Is\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter fot the attribute \textquotesingle{}is\+Game\+Over\textquotesingle{}. The game is over when the player has revealed all hidden cases without reveal a bomb. If the user chooses to reveal a case that contains a bomb, the game ends instantanely and user looses. 
+
+\begin{DoxyReturn}{Returns}
+true if the game is over, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ab83061fabcbe5b952235162cc5f55df0}\label{class_game_ab83061fabcbe5b952235162cc5f55df0}} 
+\index{Game@{Game}!mark\+Case@{mark\+Case}}
+\index{mark\+Case@{mark\+Case}!Game@{Game}}
+\subsubsection{\texorpdfstring{mark\+Case()}{markCase()}}
+{\footnotesize\ttfamily void Game\+::mark\+Case (\begin{DoxyParamCaption}\item[{const unsigned \&}]{row,  }\item[{const unsigned \&}]{column }\end{DoxyParamCaption})}
+
+
+
+Marks a case with a flag (bomb suspect) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The case\textquotesingle{}s row \\
+\hline
+{\em column} & The case\textquotesingle{}s column \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_adccaa192130e7d6f5c5973b136c0e1c7}\label{class_game_adccaa192130e7d6f5c5973b136c0e1c7}} 
+\index{Game@{Game}!remove\+Mark\+Case@{remove\+Mark\+Case}}
+\index{remove\+Mark\+Case@{remove\+Mark\+Case}!Game@{Game}}
+\subsubsection{\texorpdfstring{remove\+Mark\+Case()}{removeMarkCase()}}
+{\footnotesize\ttfamily void Game\+::remove\+Mark\+Case (\begin{DoxyParamCaption}\item[{const unsigned \&}]{row,  }\item[{const unsigned \&}]{column }\end{DoxyParamCaption})}
+
+
+
+Removes the flag from a case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The case\textquotesingle{}s row \\
+\hline
+{\em column} & The case\textquotesingle{}s column \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_a55e7cb0517ed8bc8f0cbe6d3b2be6994}\label{class_game_a55e7cb0517ed8bc8f0cbe6d3b2be6994}} 
+\index{Game@{Game}!reveal\+Case@{reveal\+Case}}
+\index{reveal\+Case@{reveal\+Case}!Game@{Game}}
+\subsubsection{\texorpdfstring{reveal\+Case()}{revealCase()}}
+{\footnotesize\ttfamily void Game\+::reveal\+Case (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Reveals a case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The case\textquotesingle{}s row \\
+\hline
+{\em column} & The case\textquotesingle{}s column \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/Game.\+hpp\item 
+core/Game.\+cpp\end{DoxyCompactItemize}
